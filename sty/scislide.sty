@@ -1,8 +1,13 @@
 \ProvidesPackage{scislide}
+% Last modified on 12-12-2018
 
 % chinese support
 \usepackage[UTF8,noindent]{ctex}
 \CTEXoptions[today=old]
+
+\usepackage{caption}
+\captionsetup[figure]{labelfont={bf},name={Fig},labelsep=period}
+\usepackage{subcaption}
 
 % \C is conflict with beamer
 % \renewcommand{\C}{\ensuremath{\mathbb{C}}}
