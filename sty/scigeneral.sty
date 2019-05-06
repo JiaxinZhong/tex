@@ -1,9 +1,10 @@
+% Last Modifed --- 2019-4-29
 \ProvidesPackage{scigeneral}
-% version: 12 Dec 2018
 
 % -Graphics
 \usepackage{graphicx}
 \usepackage{tikz}
+\usepackage{subcaption}
 
 % -math settings
 % --general settings
@@ -25,12 +26,13 @@
 \usepackage{upgreek}
 \newcommand\pri{^\prime}
 
-% \DeclareMathOperator\dif{d\!} % redundent
 % --Operators
-\DeclareMathOperator{\sinc}{sinc}
-\DeclareMathOperator{\sgn}{sgn}
 \DeclareMathOperator{\arccosh}{arccosh}
 \DeclareMathOperator{\arcsinh}{arcsinh}
+\DeclareMathOperator{\jinc}{jinc}
+\DeclareMathOperator{\sgn}{sgn}
+\DeclareMathOperator{\sinc}{sinc}
+\DeclareMathOperator{\somb}{somb}
 
 \usepackage{amsfonts}
 \newcommand{\R}{\ensuremath{\mathbb{R}}}
@@ -59,7 +61,9 @@
 \newcommand\upN{\mathrm{N}}
 \newcommand\upY{\mathrm{Y}}
 % subscriptive text
-\newcommand\st[1]{_\text{#1}}
+\newcommand\subt[1]{_\text{#1}}
+% superscriptive text
+\newcommand\supt[1]{^\text{#1}}
 
 \newcommand\mtr{^\intercal}
 
@@ -248,3 +252,8 @@
 
 % insert url
 \usepackage{url}
+
+\usepackage{outlines}
+
+\interfootnotelinepenalty=10000
+
